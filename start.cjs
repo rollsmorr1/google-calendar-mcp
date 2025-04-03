@@ -23,4 +23,6 @@ try {
 
 // Now require your MCP server's main entry point to start the server.
 // (Assuming your main server file is in build/index.js)
-require('./build/index.js');
+(async () => {
+  await import('./build/index.js');
+})();
