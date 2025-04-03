@@ -9,7 +9,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "npm run typecheck && node scripts/build.js",
-    "start": "node build/index.js",
+    "start": "node start.js",
     "auth": "node build/auth-server.js",
     "dev": "ts-node --esm src/index.ts",
     "postinstall": "scripts/build.js"
